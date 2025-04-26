@@ -5,12 +5,13 @@
 
 ---
 
-## 🎬 Aperçu de l'application
+# 🎬 Aperçu de l'application
+
 ![github](https://github.com/user-attachments/assets/59cb473b-4bb5-424f-b697-b9343026592d)
 
 ---
 
-## ⚙️ Fonctionnalités
+# ⚙️ Fonctionnalités
 
 1. **Filtres de formats**  
    - Ne traite que les fichiers `.mp3` et `.flac`.  
@@ -28,7 +29,7 @@
 
 ---
 
-## 🚀 Usage
+# 🚀 Usage
 
 ```powershell
 # Placez MusicSorter.exe, logo.ico et TagLibSharp.dll dans le même dossier
