@@ -27,5 +27,5 @@
 ## 🚀 Usage
 
 ```powershell
-# Placez MusicSorter.exe et TagLibSharp.dll dans le même dossier
-.\MusicSorter.exe
+# Placez MusicSorter.exe, logo.ico et TagLibSharp.dll dans le même dossier
+double clique sur le MusicSorter.exe
