@@ -1,6 +1,6 @@
 # 🎵 MusicSorter.exe
 
-**Auteur** : Maël FOUCAUD  
+**Auteur** : malboostone 
 **But** : Trier automatiquement vos fichiers audio (.mp3 / .flac) par artiste et album pour une intégration facile dans Plex.
 
 ---
