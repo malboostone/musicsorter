@@ -39,7 +39,3 @@ This project is "vibe-coded" using ChatGPT (o4-mini-high). I don't claim to prov
 ```powershell
 # Place MusicSorter.exe, logo.ico, and TagLibSharp.dll in the same folder
 .\MusicSorter.exe
-
-
-
-
