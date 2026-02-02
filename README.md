@@ -29,13 +29,17 @@
 
 ---
 
+## 💡 Note on "Vibe-Coding"
+This project is "vibe-coded" using ChatGPT (o4-mini-high). I don't claim to provide professional-grade software; I'm simply sharing a tool I use daily to organize my music collection in case it helps someone else. It is provided for free, and the original .ps1 script is available in the repo for full transparency.
+
+---
+
 ## 🚀 Usage
 
 ```powershell
 # Place MusicSorter.exe, logo.ico, and TagLibSharp.dll in the same folder
 .\MusicSorter.exe
 
----
 
-## 💡 Note on "Vibe-Coding"
-This project is "vibe-coded" using ChatGPT (o4-mini-high). I don't claim to provide professional-grade software; I'm simply sharing a tool I use daily to organize my music collection in case it helps someone else. It is provided for free, and the original .ps1 script is available in the repo for full transparency.
+
+
