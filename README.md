@@ -10,6 +10,8 @@
 
 Initialement conçu sous PowerShell, ce script a été entièrement réécrit en **Python** avec **GTK 3** pour offrir une interface moderne, performante et parfaitement intégrée au bureau Linux.
 
+![Aperçu de Music Sorter](preview.png)
+
 ## ✨ Fonctionnalités
 
 - **🔍 Tri par Métadonnées** : Extrait l'Artiste et l'Album des tags ID3 (MP3) ou Vorbis (FLAC) via `mutagen`.
