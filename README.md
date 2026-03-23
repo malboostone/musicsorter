@@ -1,6 +1,6 @@
 <div align="center">
   <img src="musicsorter.png" alt="Music Sorter Logo" width="128" />
-  <h1>🎶 Music Sorter</h1>
+  <h1>Music Sorter</h1>
   <p><strong>Triez facilement et automatiquement votre bibliothèque musicale pour Plex.</strong></p>
 </div>
 
@@ -34,9 +34,9 @@ sudo apt-get install -f   # Si des dépendances sont manquantes
 Une fois installé, lancez **Music Sorter** depuis le menu de vos applications (catégorie Son et Vidéo / Utilitaires).
 
 ## 🪟 Installation (Windows)
-1. Téléchargez les fichiers **`MusicSorter-fr.exe`** (ou `en`), **`TagLibSharp.dll`** et **`logo.ico`** depuis la page **[Releases](../../releases/latest)**.
-2. Placez ces trois fichiers **dans le même dossier**.
-3. Lancez simplement le fichier `.exe`. Aucune installation supplémentaire n'est requise.
+1. Téléchargez l'archive `.zip` correspondant à votre langue (**`Windows_Francais.zip`** ou **`Windows_English.zip`**) depuis la page **[Releases](../../releases/latest)**.
+2. Extrayez l'intégralité du dossier sur votre ordinateur.
+3. Lancez simplement le fichier `.exe` contenu à l'intérieur. L'icône (`logo.ico`) et la bibliothèque (`TagLibSharp.dll`) sont déjà inclus et doivent impérativement rester dans le même dossier que l'exécutable. Aucune installation supplémentaire n'est requise.
 
 ## 🛠️ Compilation Manuelle / Développement
 
