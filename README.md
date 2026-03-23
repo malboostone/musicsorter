@@ -1,41 +1,55 @@
-# 🎵 MusicSorter.exe
-
-**Author** : Maël FOUCAUD  
-**Purpose** : Automatically sort your audio files (.mp3 / .flac) by Artist and Album for seamless integration into Plex.
-
----
-
-## 🎬 App Preview
-
-<img width="677" height="585" alt="image" src="https://github.com/user-attachments/assets/2b8f361e-e954-4128-854d-0343090b5908" />
+<div align="center">
+  <img src="musicsorter.png" alt="Music Sorter Logo" width="128" />
+  <h1>🎶 Music Sorter</h1>
+  <p><strong>Triez facilement et automatiquement votre bibliothèque musicale pour Plex.</strong></p>
+</div>
 
 ---
 
-## ⚙️ Features
+**Music Sorter** est un utilitaire graphique natif pour Linux Mint (et autres distributions Ubuntu/Debian) permettant de trier automatiquement vos fichiers audio `.mp3` et `.flac` en lisant leurs métadonnées intégrées.
 
-1. **Format Filtering**  
-   - Only processes `.mp3` and `.flac` files.  
-2. **Automated Organization**  
-   - Reads ID3 metadata (TagLibSharp) to extract Artist and Album tags..  
-   - Automatically creates the folder structure: Destination\Artist\Album.  
-   - Moves each track to its respective location.
-3. **Graphical User Interface (GUI)**  
-   - Simple WinForms/WPF window running via PowerShell (no console).
-   - Source and Target folder pickers, Import/Export config buttons.
-   - Real-time log area enhanced with emojis for tracking.
-4. **Configuration Management**  
-   - `config.json` stores your SourceFolder and DestinationFolder paths.
-   - Import/Export to easily reuse your settings.
+Initialement conçu sous PowerShell, ce script a été entièrement réécrit en **Python** avec **GTK 3** pour offrir une interface moderne, performante et parfaitement intégrée au bureau Linux.
 
----
+## ✨ Fonctionnalités
 
-## 💡 Note on "Vibe-Coding"
-This project is "vibe-coded" using ChatGPT (o4-mini-high). I don't claim to provide professional-grade software; I'm simply sharing a tool I use daily to organize my music collection in case it helps someone else. It is provided for free, and the original .ps1 script is available in the repo for full transparency.
+- **🔍 Tri par Métadonnées** : Extrait l'Artiste et l'Album des tags ID3 (MP3) ou Vorbis (FLAC) via `mutagen`.
+- **📂 Organisation compatible Plex** : Déplace les fichiers dans la structure `Destination / Artiste / Album / Fichier`.
+- **🚀 Exécution asynchrone** : Le tri s'effectue en arrière-plan avec une barre de progression fluide.
+- **🎨 Interface Moderne** : Design soigné GTK 3 avec thème sombre personnalisé (CSS).
+- **⚙️ Configuration Intelligente** : Auto-détection et import automatique du fichier `config.json` au démarrage.
+- **🌐 Support Partage Réseau (SMB)** : Gère les points de montage distants inaccessibles aux copies avancées de métadonnées Posix.
 
----
+## 📦 Installation (Linux Mint / Debian / Ubuntu)
 
-## 🚀 Usage
+La méthode la plus simple est d'utiliser le paquet Debian `.deb` fourni dans les Releases.
 
-```powershell
-# Place MusicSorter.exe, logo.ico, and TagLibSharp.dll in the same folder
-.\MusicSorter.exe
+1. Téléchargez le dernier `.deb` depuis la page **[Releases](../../releases/latest)**.
+2. Double-cliquez dessus ou exécutez la commande suivante dans le terminal :
+
+```bash
+sudo dpkg -i musicsorter_*_all.deb
+sudo apt-get install -f   # Si des dépendances sont manquantes
+```
+
+Une fois installé, lancez **Music Sorter** depuis le menu de vos applications (catégorie Son et Vidéo / Utilitaires).
+
+## 🛠️ Compilation Manuelle / Développement
+
+Cloner le dépôt et construire le paquet soi-même :
+
+```bash
+git clone https://github.com/votre-pseudo/musicsorter.git
+cd musicsorter
+bash build-deb.sh
+sudo dpkg -i musicsorter_1.0.0_all.deb
+```
+
+### Dépendances requises
+
+```bash
+sudo apt install python3 python3-gi python3-gi-cairo gir1.2-gtk-3.0 python3-mutagen
+```
+
+## 📜 Licence
+
+Développé par **Maël FOUCAUD**. Libre d'utilisation.

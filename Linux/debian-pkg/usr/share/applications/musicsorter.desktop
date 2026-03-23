@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Music Sorter
+Comment=Trie automatiquement votre musique par Artiste/Album
+Exec=musicsorter
+Icon=musicsorter
+Terminal=false
+Type=Application
+Categories=Audio;Music;Utility;
+Keywords=music;sort;trier;mp3;flac;plex;
