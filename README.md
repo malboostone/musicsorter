@@ -33,6 +33,11 @@ sudo apt-get install -f   # Si des dépendances sont manquantes
 
 Une fois installé, lancez **Music Sorter** depuis le menu de vos applications (catégorie Son et Vidéo / Utilitaires).
 
+## 🪟 Installation (Windows)
+1. Téléchargez les fichiers **`MusicSorter-fr.exe`** (ou `en`), **`TagLibSharp.dll`** et **`logo.ico`** depuis la page **[Releases](../../releases/latest)**.
+2. Placez ces trois fichiers **dans le même dossier**.
+3. Lancez simplement le fichier `.exe`. Aucune installation supplémentaire n'est requise.
+
 ## 🛠️ Compilation Manuelle / Développement
 
 Cloner le dépôt et construire le paquet soi-même :
